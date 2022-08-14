@@ -33,15 +33,15 @@
     
     <link rel="stylesheet" href="css/main.css" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-EBYB5MK388"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y6EB79EH46"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-      gtag('config', 'G-EBYB5MK388');
-    </script> -->
+    gtag('config', 'G-Y6EB79EH46');
+    </script>
 
   </head>
   <body>
@@ -125,24 +125,15 @@
         <!-- HERO -->
         <div class="hero">
           <div data-aos="fade-up">
-
             <h1 class="h1 hide-for-mobile">              
               Hola, soy <span class="main-font text-blue">Emanuel Juri</span>
             </h1>
-
             <div class="mobile-menu hide-for-desktop">              
               <span class=" box h1-mobile main-font text-white">Hola, soy <span class="h1-mobile main-font text-blue">Emanuel Juri</span></span>
             </div>
-
             <p class="student" id="student">
               Desarrollador FullStack Web <a href="" class="blue-link-underline" target="_blank"></a>
             </p>
-            <!-- <div class="hero-btns">
-              <a href="#projects" class="btn-blue"><i class="fas fa-code"></i> Projects</a>
-              <a href="https://github.com/ben04rogers" class="btn-blue-outline mx-1" id="projects-btn"
-                target="_blank"><i class="fab fa-github"></i> Github</a
-              >
-            </div> -->
           </div>
         </div>
 
@@ -202,9 +193,20 @@
               Nace como proyecto grupal integrador para poner en practica todas las habilidades adquiridas en el bootcamp Henry. 
               En este gran proyecto me desempeñe como Frontend developer y líder técnico de finanzas, trabajamos mediante la metodología SCRUM </p>
             <div class="project-links">
-              <a href="https://www.youtube.com/" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
+              <a onclick="show()" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
               <a href="https://github.com/SantiagoGomez1/client-HenryBank" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
                 > Code</a>
+                
+                <script type="text/javascript">
+                    function show(){
+                        swal({
+                            title: "Disculpe las molestias",
+                            text: "No disponible aún",                            
+                            button: "Oki",
+                            });                        
+                    }
+                </script>
+
             </div>
           </div>
         </div>
@@ -237,26 +239,25 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="project-row" data-aos="fade-up">
+<!-- 
+        <div class="project-row" data-aos="fade-up">
           <div class="project-left">
-            <img src="img/bfsproject.JPG" alt="">
+            <img src="img/project.JPG" alt="">
           </div>
           <div class="project-right">
-            <h3>Family Tree Shortest Path</h3>
+            <h3>Project Example</h3>
             <ul class="tech-stack-list">
               <p class="text-grey"><b>Made with: </b></p>
-              <li><span class="iconify" data-icon="logos:python" data-inline="false"></span></li>
+              <li><span class="iconify" data-icon="logos:javascript" data-inline="false"></span></li>
             </ul>
-            <p>Python program that implements a breadth-first search algorithm to generate a minimal spanning tree. Problem was to calculate a shortest path from a starting vertex in a graph to each other vertex. The vertices represent people and each person is related to every other person through parent-child relationships. A person can see how they are related to each other person in the tree.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias, impedit, quaerat</p>
             <div class="project-links">
-              <a href="https://www.youtube.com/watch?v=VXCZKsqupxA" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
-              <a href="https://github.com/ben04rogers/breadth-first-search" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
+              <a href="https://www.youtube.com/" class="btn-blue btn-small hover-bg-light" target="_blank"> <i class="fab fa-youtube"></i> Demo</a>
+              <a href="https://github.com/" class="btn-blue-outline btn-small mx-1" target="_blank"> <i class="fab fa-github"></i
                 > Code</a>
             </div>
           </div>
         </div> -->
-
       </div>
     </section>
     
@@ -304,24 +305,17 @@
      <!-- Education -->
      <!-- <section id="education" class="education">
       <div class="container">
-        <h2 class="main-font" data-aos="fade-in">My <span class="text-blue main-font">Education</span></h2>
+        <h2 class="main-font" data-aos="fade-in">My <span class="text-blue main-font">About me</span></h2>
 
         <div class="education-card" data-aos="zoom-in">
             <div class="education-card-column">
               <div class="card-column-image">
-                <img src="/img/qut-Logo.png" alt="">
+                <img src="/img/logo.png" alt="">
               </div>
 
               <div class="card-column-large">
                 <h4 class="education-year">2022</h4>
-                <h4>Queensland University of Technology - Bachelor of Information Technology</h4>
-                <p>GPA 6.15/7</p>
-                <ul>
-                  <li>Major in computer science</li>
-                  <li>Minor in networks & security</li>
-                  <li>Minor in mobile applications</li>
-                  <li>Science & Engineering Dean's List - 2019 & 2021</li>
-                </ul>
+                <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
               </div>
             </div>
         </div>
@@ -439,6 +433,9 @@
     <script>
       AOS.init();
     </script>
+
+    <!-- SweetAlert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
   </body>
 </html>

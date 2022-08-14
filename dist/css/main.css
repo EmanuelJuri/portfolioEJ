@@ -9,11 +9,6 @@ html {
     font-family: "Inter", sans-serif;
   }
   
-  :root {
-    --background-color:
-    linear-gradient(90deg, #16222A 0%, #3A6073 100%);  
-  }
-  
   body {
     background: linear-gradient(90deg, #000428 0%, #004E92 100%);  
     /* background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%); */
