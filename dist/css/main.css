@@ -61,7 +61,11 @@ html {
     overflow: hidden;
     transition: all 0.3s ease;
   }
-  
+
+  .top-projects{
+    margin: 65px 0 0 0;
+  }
+
   .text-blue {
     color: #3b82f6;
     color: #00c4cc;
