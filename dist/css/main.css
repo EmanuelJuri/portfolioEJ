@@ -49,12 +49,13 @@ html {
     height: 100%;
   }
   
-  .container {
-    max-width: 1200px;
-    padding: 1.5rem 1.5rem;
+  .container {    
+    padding: 1.5rem 5rem;
     margin: auto;
     overflow: hidden;
     transition: all 0.3s ease;
+
+    /* border: 1px solid red; */
   }
 
   .top-projects{
@@ -209,14 +210,14 @@ html {
     cursor: pointer;
     position: relative;
     border: 0;
-    padding: 8px 0;
-    min-width: 100px;
+    padding: .5em 1.5em;
+    width: auto;
     text-align: center;
     margin: 0 auto;
     line-height: 24px;
     font-family: inherit;
     font-weight: 600;
-    font-size: 14px;
+    font-size: clamp(1em, 1.2vw, 3em);
     background: none;
     outline: none;
     color: var(--text);
@@ -321,7 +322,7 @@ html {
     display: block;
     position: relative;
     z-index: 4;
-    opacity: var(--text-opacity);
+    opacity: var(--text-opacity);    
   }
   
   .btn-email span.success {
@@ -408,8 +409,8 @@ html {
   header nav .nav-container {
     position: relative;
     display: flex;
-    justify-content: space-between;  
-  
+    justify-content: space-between;    
+      
     /* border: 1px solid green; */
   }
   
@@ -430,6 +431,7 @@ html {
   
   header nav .nav-container .nav-links {
     z-index: 1000;  
+    font-size: clamp(1em, 1.2vw, 3em);
     /* border: 1px solid white; */
   }
   
@@ -515,7 +517,7 @@ html {
   header .hero p {
     color: white;
   }
-  
+
   header .hero h1 {
     letter-spacing: 2px;
     white-space: nowrap;
@@ -543,9 +545,9 @@ html {
   }
   
   header .hero p {
-    color: #dcdcdc;
+    color: #dcdcdc;    
     line-height: 1.6;
-    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-size: clamp(1.25rem, 2vw, 5rem);
     text-align: center;
     max-width: 800px;
     margin: 0 auto;
@@ -727,6 +729,10 @@ html {
   .projects h2 {
     text-align: center;
     margin-bottom: 3rem;
+    font-size: clamp(1.5em, 2vw, 3em);
+    text-align: center; 
+    
+    /* border: 1px solid red; */
   }
   
   .projects .project-row {
@@ -752,7 +758,8 @@ html {
   }
   
   .projects .project-row .project-right h3 {
-    font-size: 1.25rem;
+    font-size: clamp(1.25em, 1.4vw, 3em);
+
   }
   
   .projects .project-row .project-right .tech-stack-list {
@@ -760,10 +767,17 @@ html {
     flex-wrap: wrap;
     list-style-type: none;
     margin-top: 1rem;
+    font-size: clamp(1em, 1.2vw, 3em);
+    /* border: 1px solid red; */
+  }
+
+  .projects .project-row .project-right p {
+    font-size: clamp(1em, 1.2vw, 3em);
   }
   
   .projects .project-row .project-right .tech-stack-list p {
     margin-right: 1rem;
+    /* border: 1px solid green; */
   }
   
   .projects .project-row .project-right .tech-stack-list li {
@@ -773,6 +787,7 @@ html {
   
   .projects .project-row .project-right .project-links {
     margin-top: 1rem;
+    font-size: clamp(1em, 1.2vw, 3em);
   }
   
   .projects .project-row #webscraper {
@@ -896,6 +911,7 @@ html {
   .skills h2 {
     text-align: center;
     margin-bottom: 3rem;
+    font-size: clamp(1.5em, 2vw, 3em);
   }
   
   .skills .container {
@@ -991,11 +1007,15 @@ html {
   .contact {
     background: white;
     padding: 3rem 0;
+
+    border: 1px solid blue;
   }
   
   .contact .section-title {
     margin-bottom: 2rem;
     text-align: center;
+    font-size: clamp(1.5em, 2vw, 3em);
+
   }
   
   .contact .card-container {
@@ -1003,6 +1023,7 @@ html {
     justify-content: space-around;
     margin-bottom: 3rem;
     flex-wrap: wrap;
+    font-size: clamp(1em, 1.2vw, 3em);
   }
   
   .contact .card-container .card {
@@ -1039,6 +1060,7 @@ html {
     border-radius: 3px;
     box-shadow: 0 0.15rem 0.6rem rgba(43, 52, 56, 0.15);
     padding: 2rem;
+    font-size: clamp(1em, 1.2vw, 3em);
   }
   
   .contact form h2 {
@@ -1052,7 +1074,7 @@ html {
     border-radius: 3px;
     border: 1px solid black;
     padding: 0.75rem;
-    font-size: 1rem;
+    font-size: clamp(1em, 1.2vw, 3em);
   }
   
   .contact form .form-group input:focus {
@@ -1065,7 +1087,7 @@ html {
     margin: 0.75rem 0;
     border: 1px solid black;
     padding: 0.75rem;
-    font-size: 1rem;
+    font-size: clamp(1em, 1.2vw, 3em);
     resize: vertical;
   }
   
